@@ -36,6 +36,7 @@ find_by_email = async (email)=>{
 module.exports.login_user = async(req,res) => {
     try{
         const user_res = await find_by_email(req.body.email)
+        if(user_res === undefined) return res.status(400).json({error:"User does not exists"})
         const user = new User(user_res.id,user_res.email,user_res.pass)
         const validPassword = await bcrypt.compare(req.body.pass, user.pass);
       if (validPassword) {

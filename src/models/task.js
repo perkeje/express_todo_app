@@ -6,3 +6,5 @@ class Task {
         this.done = done   
     }
 }
+
+module.exports = Task

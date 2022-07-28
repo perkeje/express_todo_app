@@ -5,3 +5,5 @@ class User{
         this.pass = pass
     }
 }
+
+module.exports = User

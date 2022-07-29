@@ -1,6 +1,7 @@
 {
   "dependencies": {
     "bcrypt": "^5.0.1",
+    "cors": "^2.8.5",
     "dotenv": "^16.0.1",
     "express": "^4.18.1",
     "express-validator": "^6.14.2",
@@ -17,7 +18,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon src/index.js",
-    "pretty" : "prettier --write \"./**/*.js\""
+    "pretty": "prettier --write \"./**/*.js\""
   },
   "author": "Juraj Peric",
   "license": "ISC",

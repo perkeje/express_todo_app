@@ -1,8 +1,5 @@
-var express = require('express')
-var app = express()
-var routes = require("./routes/router")
+var express = require("express");
+var app = express();
+var routes = require("./routes/router");
 
-
-app.use('/',routes)
-    .listen(3000)
-
+app.use("/", routes).listen(3000);

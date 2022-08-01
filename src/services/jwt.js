@@ -23,4 +23,3 @@ module.exports.generate_email_token = (user) => {
   };
   return jwt.sign(claims, process.env.EMAIL_SECRET);
 };
-

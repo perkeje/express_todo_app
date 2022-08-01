@@ -18,5 +18,5 @@ module.exports.create_new_user = async (email, pass, pool) => {
     [email, hashed_pass]
   );
   user = user.rows[0];
-  return new User(user.id, user.email, user.pass,user.confirmed);
+  return new User(user.id, user.email, user.pass, user.confirmed);
 };

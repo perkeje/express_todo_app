@@ -5,7 +5,7 @@ const { body } = require("express-validator");
 
 router.post(
   "/",
-  body("email").isEmail().normalizeEmail(),
+  body("email").isEmail(),
   body("pass").isLength({ min: 3 }),
   register_user
 );

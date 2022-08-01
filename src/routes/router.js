@@ -4,6 +4,7 @@ var router = express.Router();
 var register = require("./auth/register");
 var login = require("./auth/login");
 var tasks = require("./tasks/tasks");
+var confirmation = require("./auth/confirmation")
 var { authenticateToken } = require("../middlewares/auth");
 
 router.use(cors());
@@ -16,5 +17,6 @@ router.use("/login", login);
 router.use("/register", register);
 router.use("/tasks", authenticateToken);
 router.use("/tasks", tasks);
+router.use("/confirmation",confirmation)
 
 module.exports = router;
